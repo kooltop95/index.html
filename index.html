@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeSolo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+           <div class="logo">
+             <a href="/">
+                  <img src="img/logo.png" alt="AnimeSolo Logo">
+                   <span>AnimeSolo</span>
+               </a>
+         </div>
+             <nav>
+              <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="anime.html">Аниме</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Поиск аниме">
+                <button id="search-button">Поиск</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="main-functionality" >
+        <h2>Основной функционал</h2>
+            <section class="anime-section" id="popular-anime">
+                <h3>Популярное Аниме</h3>
+                <div class="anime-list" data-category="popular">
+                </div>
+            </section>
+
+            <section class="anime-section" id="new-anime">
+                <h3>Новинки</h3>
+                 <div class="anime-list"  data-category="new">
+                </div>
+            </section>
+
+             <section class="anime-section" id="genre-anime">
+                <h3>Аниме по жанрам</h3>
+                    <div class="filters">
+                        <button class="filter-button" data-genre="action">Экшен</button>
+                        <button class="filter-button" data-genre="comedy">Комедия</button>
+                        <button class="filter-button" data-genre="fantasy">Фэнтези</button>
+                       <!-- Другие жанры можно добавить -->
+                    </div>
+                    <div class="anime-list" data-category="genre">
+                   </div>
+            </section>
+          </section>
+
+         <section class="additional-functionality">
+           <h2>Дополнительный функционал</h2>
+            <section class="anime-section" id="recommendations-anime">
+                 <h3>Рекомендации</h3>
+                 <div class="anime-list"  data-category="recommendations">
+                </div>
+           </section>
+         </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AnimeSolo</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
